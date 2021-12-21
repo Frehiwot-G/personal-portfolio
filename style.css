@@ -1,0 +1,728 @@
+/*styling the body*/
+
+body{
+	background-color: #e5e4e2;
+	text-decoration: none;
+}
+
+/*styling the header*/
+
+.navbar{
+	background-color: #9B9393;
+	position: fixed;
+	padding: 15px;
+	text-align: center;
+	margin-right: 20px;
+	width: 100%;
+	}
+/*.navbar .stick{
+	padding: 15px;
+	background-color: #9B9393;
+}*/
+
+
+a:link, a:visited{
+	background-color: #9B9393;
+	color: black;
+	padding: 15px;
+	font-size: 17px;
+	font-family: serif;
+	word-spacing: 15px;
+	text-decoration: none;
+	display:inline-block;
+}
+
+a:hover, a:active{
+	color: cyan;
+}
+
+/*styling the home page*/
+
+img#me{
+	float: left;
+	width: 30%;
+	border-radius: 10px;
+	margin-left: 30px;
+}
+
+p{
+	color: hsl(0,100%,30%);
+	text-indent: 20px;
+}
+p#para4{
+	font-size: 200%;
+	text-align: center;
+	text-transform: capitalize;
+
+}
+h1{
+	word-spacing: 10px;
+	color: hsl(0,100%,30%);
+	text-indent: 10px;
+	font-family: monospace;
+	font-style: oblique;
+}
+h1#h{
+	text-indent: 50px;
+	font-size: 300%;
+	color: #001f3f;
+	-webkit-text-stroke:2px #001f3f;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+/*css for the typing animation*/
+
+.contains{
+	display: inline-flex;
+	float: left;
+}
+.contains .static{
+	font-size: 300%;
+	color: #001f3f;
+}
+#h2{
+	text-indent: 50px;
+	font-size: 350%;
+	color: #001f3f;
+	-webkit-text-stroke:2px #001f3f;
+	text-transform: uppercase;
+}
+.contains .dynamic{
+	
+}
+.contains .dynamic span{
+	margin: 20PX;
+	position: relative;
+
+}
+
+.contains .dynamic span::after{
+	content: "";
+	position:absolute;
+	left: 0;
+	height: 100%;
+	width:100%;
+	background: #e5e4e2;
+	border-left: 3px solid #001f3f;
+	animation: typing 2s steps(15) infinite;
+}
+@keyframes typing {
+	100%{
+		left: 100%;
+		margin:0 -30px 0 30px;
+	}
+}
+
+/*styling the about page*/
+
+h1#me1{
+	text-align: center;
+	font-size: 300%;
+}
+
+div.Heloo{
+	text-align: center;
+}
+
+div.hello{
+	border: 15px solid white;
+	width: 70%;
+	font-size: 130%;
+	border-radius: 25px;
+	margin-left: 200px;
+	padding: 30px;
+	text-align: center;
+	font-family: monospace;
+	font-style: oblique;
+}
+
+
+
+li{
+	color: hsl(0,100%,30%);
+	text-align: left;
+}
+p#pe{
+	text-align: left;
+}
+#para1{
+	font-weight: 50px;
+}
+
+#tex{
+	width: 20%;
+	float: left;
+}
+
+span.about{
+	color: black;
+}
+
+/*styling the social media icons*/
+
+img#gmail{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+.contain{
+	display: inline-flex;
+
+
+}
+.contain .icon{
+	margin:0px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	cursor: pointer;
+}
+.contain{
+	float: right;
+}
+.contain .icon span{
+	position: relative;
+	height: 50px;
+	width: 50px;
+	display: block;
+	background: white;
+	text-align: center;
+	border-radius: 50%;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+}
+.about .contain .icon span i{
+	color: black;
+	font-size: 25px;
+	line-height: 50px;
+}
+.contain .icon .tool{
+	position: relative;
+	top: 0px;
+	font-size: 20px;
+	padding: 10px 18px;
+	border-radius: 25px;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.2);
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.4s;
+}
+.contain .g .tool{
+	background: #34a853;
+}
+.contain .t .tool{
+	background: #0088cc;
+
+}
+.contain .i .tool{
+	background: #e1306c;
+
+}
+.contain .icon:hover .tool{
+	top: -10px;
+	opacity: 1;
+	pointer-events: auto;
+}
+.contain .icon .tool:before{
+	position: absolute;
+	content: "";
+	width: 15px;
+	height: 15px;
+	left: 50%;
+	bottom: -8px;
+	transform: rotate(45deg);
+}
+.contain .g .tool:before{
+	background: #34a853;
+
+}
+.contain .t .tool:before{
+	background: #0088cc;
+
+}
+.contain .i .tool:before{
+	background: #e1306c;
+
+}
+.contain .g:hover span,
+.contain .g:hover .tool,
+.contain .g:hover .tool:before{
+	background: #34a853;
+
+}
+.contain .t:hover span,
+.contain .t:hover .tool,
+.contain .t:hover .tool:before{
+	background: #0088cc;
+
+}
+.contain .i:hover span,
+.contain .i:hover .tool,
+.contain .i:hover .tool:before{
+	background: #e1306c;
+
+}
+#social{
+	background: none;
+}
+
+.goal1{
+	text-align: center;
+	font-size: 300%;
+	font-style: bold;
+	font-family:Lucida Handwriting;
+	
+
+}
+.bord{
+	border-style: dotted;
+	border-radius: 25px;
+	border-color: black;
+}
+span#goal{
+	background-color: #ee82ee;
+	border:5px solid #ee82ee;
+	border-radius: 25px;
+	text-transform: uppercase;
+	font-family: impact;
+	animation-name: goal;
+	animation-duration: 2s;
+}
+@keyframes goal{
+	 0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+
+
+ul{
+	list-style-type: circle;
+}
+li{
+	color: white;
+}
+#edu{
+	color: hsl(0,100%,30%);
+	font-family: MS Gothic;
+}
+
+section{
+	border: 10px solid #AAAAAA;
+	border-radius: 50px;
+	width: 50%;
+	text-align: center;
+	font-family: Ink Free;
+	font-size: 150%;
+	padding: 5px;
+	margin: 30px;
+	background-color: #001f3f;
+	color: white;
+	
+}
+#sec1{
+	float: left;
+	padding: 10px;
+	margin: 50px;
+}
+#black{
+	margin: 20px;
+	height: 80%;
+	width: 80%;
+	border:1px solid #001f3f;
+	float: center;
+}
+
+
+/*styling the progress bar for performance level*/
+
+.progress{
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    position: relative;
+}
+.progress:after{
+    content: "";
+    border-radius: 50%;
+    border: 15px solid #f2f5f5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.progress > span{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.progress .progress-left{
+    left: 0;
+}
+.progress .progress-bar{
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    top: 0;
+}
+.progress .progress-left .progress-bar{
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    -webkit-transform-origin: center left;
+    transform-origin: center left;
+}
+.progress .progress-right{
+    right: 0;
+}
+.progress .progress-right .progress-bar{
+    left: -100%;
+    -webkit-transform-origin: center right;
+    transform-origin: center right;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value{
+    font-size: 24px;
+    color: hsl(0,100%,30%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+@keyframes loading-1{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+@keyframes loading-2{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(144deg);
+        transform: rotate(144deg);
+    }
+}
+@keyframes loading-3{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(80deg);
+        transform: rotate(80deg);
+    }
+}
+@keyframes loading-4{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(36deg);
+        transform: rotate(36deg);
+    }
+}
+@keyframes loading-5{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(126deg);
+        transform: rotate(126deg);
+    }
+}
+.progress.blue .progress-bar{
+    border-color: #26abfd;
+}
+.progress.blue .progress-left .progress-bar{
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+.progress.yellow .progress-bar{
+    border-color: #fdc426;
+}
+.progress.yellow .progress-left .progress-bar{
+    animation: loading-3 1s linear forwards 1.8s;
+}
+.progress.pink .progress-bar{
+    border-color: #f83754;
+}
+.progress.pink .progress-left .progress-bar{
+    animation: loading-4 0.4s linear forwards 1.8s;
+}
+ .lett{
+	position: absolute;
+	/*left: 0;
+	bottom: -16px;*/
+	font-size: 30px;
+	text-transform: uppercase;
+	color: #A9A9A9;
+}
+
+
+
+/*styling the pictures inn the inspiration page*/
+
+.contact{
+	margin-top:100px; 
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	
+}
+.contact .contact-con h2{
+	font-weight: 500;
+	font-size: 300%;
+	text-transform: capitalize;
+
+}
+.container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .contact-info{
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+.container .contact-info .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+}
+.container .contact-info .icon{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	background-color: #ffff;
+}
+.container .contact-info .box .text{
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+	font-weight: 250;
+
+
+}
+.contactform{
+	width: 40%;
+	padding: 40px;
+	background-color: #ffff;
+}
+.contactform h2{
+	font-weight: 500;
+	font-size: 40px;
+}
+.contactform .inputbox{
+	width: 100%;
+	position:relative;
+	margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+	width: 100%;
+	padding: 5px 0;
+	border:none;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+
+.contactform .inputbox input:valid~span,
+.contactform .inputbox textarea:valid ~span,{
+	font-size: 12px;
+	transform: translateY(-20PX);
+}
+.contactform .inputbox input[type="submit"]{
+	width: 100px;
+	background-color:cyan;
+	border:none;
+	cursor: pointer;
+	padding: 10px;
+}
+.gallery{
+	width: 1280px;
+	height: 450px;
+	margin:30px 70px 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+}
+.H{
+	text-align: center;
+	font-weight: 20px;
+	font-size: 200%;
+}
+.gallery .G{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin:10px 10px;
+	box-sizing: border-box;
+	display: inline-block;
+
+}
+.gallery .G .imgbox{
+	position: relative;
+}
+.gallery .G .imgbox img{
+	max-width: 100%;
+
+	transition: transform .4s;
+}
+.gallery .G:hover .imgbox img{
+	transform: scale(1.2);
+
+}
+.gallery .G .detail{
+	position: absolute;
+	top: 10px;
+	bottom: 10px;
+	left: 10px;
+	right: 10px;
+	background:rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform 1s;
+
+}
+.gallery .G:hover .detail{
+	transform: scaleY(1);
+
+}
+.gallery .G .detail p{
+	color: #fff;
+}
+.gallery .G .detail .dc{
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 15px;
+	color: #fff;
+}
+
+/*styling the footer*/
+
+footer{
+	color: white;
+}
+.footer-btm{
+	position: absolute;
+	left: 0;
+	right: 0;
+	background-color: #001f3f;
+	padding: 20px;
+	width: 100vw;
+	
+}
+.footer-btm p{
+	font-size: 20px;
+	word-spacing: 2;
+	text-transform: capitalize;
+	color: white;
+	text-align: center;
+}
+.footer-btm span{
+	text-transform:uppercase;
+	color: cyan;
+}
+.box{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: right;
+	flex-direction: column;
+}
+.box .percent{
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+.box .percent svg{
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+.box .percent svg circle{
+	width: 150px;
+	height: 150px;
+	fill: none;
+	stroke-width: 10;
+	stroke: #000;
+	transform: translate(5px,5px);
+	stroke-dasharray: 440;
+	stroke-dashoffset: 440;
+	stroke-linecap: round;
+}
+.box .percent svg circle:nth-child(1){
+	stroke-dashoffset: 0;
+	stroke: #f3f3f3;
+}
+.box .percent svg circle:nth-child(2){
+	stroke-dashoffset: calc(440 - (440* 87%)/100);
+	stroke: #03a9f4;
+}
+.box .percent .number{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #111;
+}
+.box .percent .number h2{
+	font-size: 48px;
+}
+.box .percent .number h2 span{
+	font-size: 24px;
+}
+.box .text{
+	padding: 10px 0 0;
+	color: #999;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+ 
+
+ 
+
+
+
+
