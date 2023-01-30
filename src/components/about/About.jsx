@@ -25,9 +25,9 @@ const About = () => {
             
           </div>
           <p>
-            I have been working on software development projects during my internship<br/> and also I have been participating on my university course projects.
-            <br/>My career objective is to work with
-                experienced web developers to develop<br/> my skills and knowledge.
+          A software engineer with 4+ years experience of designing, coding and maintaining reliable software applications in python, C++, PHP and asp.net MVC framework
+          <br/> . I am a quick learner and dedicated to keep up with the most recent developments and update my education with the upcoming technologies. 
+            <br/>In addition to this technical expertise I'm an excellent communicator, can take direction well, and always strive for collaborative outcomes.
             </p>
             <a href='#contact' className='btn btn-primary'>Let's Talk</a>
         </div>
